@@ -22,3 +22,26 @@ if (menuButton && navGroups.length) {
 
 const yearLabel = document.querySelector('[data-current-year]');
 if (yearLabel) yearLabel.textContent = new Date().getFullYear();
+
+document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+  const slides = Array.from(carousel.querySelectorAll('.banner-slide'));
+  const dots = Array.from(carousel.querySelectorAll('.carousel-dots button'));
+  const previous = carousel.querySelector('.carousel-prev');
+  const next = carousel.querySelector('.carousel-next');
+  let activeIndex = 0;
+
+  const showSlide = (index) => {
+    activeIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      slide.hidden = slideIndex !== activeIndex;
+      slide.setAttribute('aria-hidden', String(slideIndex !== activeIndex));
+    });
+    dots.forEach((dot, dotIndex) => {
+      dot.setAttribute('aria-current', String(dotIndex === activeIndex));
+    });
+  };
+
+  previous?.addEventListener('click', () => showSlide(activeIndex - 1));
+  next?.addEventListener('click', () => showSlide(activeIndex + 1));
+  dots.forEach((dot, index) => dot.addEventListener('click', () => showSlide(index)));
+});
