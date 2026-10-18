@@ -22,6 +22,7 @@ a { color: inherit; text-decoration: none; }
 .nav-group a:hover, .contact-row a:hover, .footer-contact:hover { color: var(--green); }
 .chevron { margin-left: 3px; color: #777; }
 .brand { min-height: 114px; display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--green); }
+.brand-logo { display: block; width: 118px; height: 118px; object-fit: contain; }
 .stoplight { display: flex; flex-direction: column; gap: 4px; }
 .stoplight i { width: 33px; height: 33px; display: block; border: 2px solid #bbb; border-radius: 50%; background: #078d13; box-shadow: 0 0 0 1px #eee; }
 .stoplight i:nth-child(2) { background: #ffd719; }
@@ -94,6 +95,7 @@ a { color: inherit; text-decoration: none; }
   .site-header { margin-top: 7px; }
   .header-main { min-height: 100px; grid-template-columns: 1fr 1fr; }
   .brand { grid-column: 1 / -1; grid-row: 1; min-height: 81px; }
+  .brand-logo { width: 82px; height: 82px; }
   .brand-wording strong { font-size: 24px; }
   .stoplight i { width: 27px; height: 27px; }
   .nav-group { display: none; position: absolute; z-index: 5; top: 88px; left: 0; right: 0; padding: 16px; background: #fff; box-shadow: 0 5px 12px #0002; flex-direction: column; align-items: flex-start; gap: 16px; }
