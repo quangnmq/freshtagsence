@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 760" role="img" aria-labelledby="title desc">
+ <title id="title">Ba mức màu trên tem FreshTag Sense</title>
+ <desc id="desc">Hai hàng mũi tên màu xanh và đỏ, lần lượt chỉ mức Nguy hiểm, Chú ý và An toàn.</desc>
+ <g font-family="Montserrat, Arial, sans-serif" font-weight="600" text-anchor="middle">
+  <g>
+   <path d="M20 24h340L230 154l130 130H20l130-130z" fill="#087f45"/><path d="M460 24h340L670 154l130 130H460l130-130z" fill="#69cf32"/><path d="M900 24h340L1110 154l130 130H900l130-130z" fill="#50cfa0"/>
+   <rect x="75" y="300" width="230" height="66" rx="3" fill="#087f45"/><rect x="515" y="300" width="230" height="66" rx="3" fill="#69cf32"/><rect x="955" y="300" width="230" height="66" rx="3" fill="#50cfa0"/>
+   <text x="190" y="344" fill="#fff" font-size="27">Nguy hiểm</text><text x="630" y="344" fill="#fff" font-size="27">Chú ý</text><text x="1070" y="344" fill="#fff" font-size="27">An toàn</text>
+  </g>
+  <g transform="translate(0 190)">
+   <path d="M20 218h340L230 348l130 130H20l130-130z" fill="#a91e22"/><path d="M460 218h340L670 348l130 130H460l130-130z" fill="#fb5146"/><path d="M900 218h340L1110 348l130 130H900l130-130z" fill="#f78383"/>
+   <rect x="75" y="494" width="230" height="66" rx="3" fill="#a91e22"/><rect x="515" y="494" width="230" height="66" rx="3" fill="#fb5146"/><rect x="955" y="494" width="230" height="66" rx="3" fill="#f78383"/>
+   <text x="190" y="538" fill="#fff" font-size="27">Nguy hiểm</text><text x="630" y="538" fill="#fff" font-size="27">Chú ý</text><text x="1070" y="538" fill="#fff" font-size="27">An toàn</text>
+  </g>
+ </g>
+</svg>
