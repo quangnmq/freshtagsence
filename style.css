@@ -315,6 +315,53 @@ a { color: inherit; text-decoration: none; }
   .footer-bottom { align-items: flex-start; flex-direction: column; justify-content: center; padding: 12px 0; gap: 7px; }
 }
 
+/* Product page: keep the color guide and banner artwork readable on phones. */
+@media (max-width: 760px) {
+  .product-page { width: calc(100% - 24px); }
+  .banner-green,.banner-red { padding-inline: 0; }
+  .banner-green h2,.banner-red h2 { margin-bottom: 10px; font-size: clamp(19px,5vw,22px); }
+  .banner-carousel { background: #f5f8f2; }
+  .banner-slide { aspect-ratio: auto; }
+  .banner-slide img { width: 100%; height: auto; object-fit: contain; }
+  .color-guide { padding-inline: 0; }
+  .color-guide-image-scroll { max-width: 100%; overflow: visible; }
+  .color-guide-image-scroll img { width: 100%; max-width: 100%; height: auto; }
+  .color-guide-figure { padding: 10px; }
+  .color-guide-figure figcaption { font-size: 12px; line-height: 1.5; }
+  .color-guide-levels { gap: 12px; }
+  .guide-level { padding: 17px; }
+  .guide-level-name { font-size: 16px; }
+  .guide-level p { margin-top: 10px; font-size: 14px; line-height: 1.65; }
+}
+@media (max-width: 420px) {
+  .color-guide-heading h2 { font-size: 25px; }
+  .color-guide-intro { font-size: 14px; line-height: 1.7; }
+  .guide-level { padding: 15px; }
+  .guide-level p { font-size: 14px; }
+  .carousel-arrow { width: 34px; height: 34px; }
+}
+
+/* Make each status card quicker to scan on narrow screens. */
+@media (max-width: 760px) {
+  .color-guide-levels { gap: 10px; }
+  .guide-level {
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    gap: 0;
+    padding: 14px 16px 15px;
+    border-top-width: 3px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px #21351c0a;
+  }
+  .guide-level-name { gap: 9px; font-size: 16px; }
+  .guide-level-name i { width: 30px; height: 30px; font-size: 11px; }
+  .guide-level p { margin: 8px 0 0 39px; color: #465247; font-size: 14px; line-height: 1.55; }
+}
+@media (max-width: 420px) {
+  .guide-level { padding: 13px 14px 14px; }
+  .guide-level p { margin-left: 39px; font-size: 14px; line-height: 1.5; }
+}
+
 /* Extend FreshTag green through the shared page backgrounds */
 .product-hero,.featured-post,.product-cta,.blog-cta { background-color: var(--green-surface); }
 .banner-green,.banner-red { background: transparent; }
